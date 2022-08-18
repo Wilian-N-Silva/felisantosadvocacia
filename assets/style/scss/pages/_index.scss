@@ -1,0 +1,106 @@
+#informacoes {
+    padding-top: 40rem;
+
+    .areas,
+    .contact {
+        margin-bottom: 40px;
+
+        & .information {
+            display: grid;
+            gap: 20px;
+            text-align: center;
+            justify-content: center;
+            color: $color-generic-viridian-70;
+            margin-bottom: 40px;
+
+            &-title {
+                font: $heading-2;
+                text-transform: uppercase;
+            }
+
+            &-subtitle {
+                font: $info-subtitle-sm;
+                max-width: 24ch;
+
+            }
+
+            &-description {
+                font: $info-description-sm;
+                max-width: 36ch;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    #informacoes {
+        padding-top: 20rem;
+
+        .areas,
+        .contact {
+
+            & .information {
+                display: grid;
+                gap: 20px;
+                text-align: center;
+                justify-items: center;
+                color: $color-generic-viridian-70;
+                margin-bottom: 40px;
+
+                &-title {
+                    font: $heading-2;
+                    text-transform: uppercase;
+                }
+
+                &-subtitle {
+                    font: $info-subtitle;
+                    max-width: 24ch;
+
+                }
+
+                &-description {
+                    font: $info-description;
+                    max-width: 36ch;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    #informacoes {
+        padding-top: 0;
+
+        .areas,
+        .contact {
+            margin-bottom: 80px;
+
+            & .information {
+                display: grid;
+                gap: 20px;
+                text-align: center;
+                justify-content: center;
+                color: $color-generic-viridian-70;
+                margin-bottom: 40px;
+
+                &-title {
+                    font: $heading-2;
+                    text-transform: uppercase;
+                }
+
+                &-subtitle {
+                    font: $info-subtitle;
+                    max-width: 24ch;
+
+                }
+
+                &-description {
+                    font: $info-description;
+                    max-width: 36ch;
+                }
+            }
+        }
+    }
+
+}

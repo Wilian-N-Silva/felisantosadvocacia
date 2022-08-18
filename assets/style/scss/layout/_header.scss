@@ -1,0 +1,113 @@
+.header {
+    background: url('/assets/img/patrick-fore-H5Lf0nGyetk-unsplash.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 640px;
+    position: relative;
+    margin-bottom: 15rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url('/assets/img/themis.svg') no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-container {
+        padding-top: 40px;
+
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        align-items: start;
+        gap: 40px;
+        height: 100%;
+
+        &--logo-wrapper {
+            display: flex;
+        }
+
+        &--info {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 3.75rem;
+
+            h1 {
+                font: $heading-1-sm;
+                color: $color-generic-viridian-5;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .header {
+        height: 800px;
+        margin-bottom: 15rem;
+
+        &-container {
+            align-content: center;
+            justify-items: center;
+
+            align-content: center;
+
+            &--logo-wrapper {
+                display: flex;
+            }
+
+            &--info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3.75rem;
+
+                text-align: center;
+
+                h1 {
+                    font: $heading-1-sm;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .header {
+        margin-bottom: 15rem;
+
+        &-container {
+            padding-top: 0;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+            height: 100%;
+            gap: 0;
+
+            &--logo-wrapper {
+                display: flex;
+            }
+
+            &--info {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 3.75rem;
+                text-align: start;
+
+                h1 {
+                    font: $heading-1;
+                }
+            }
+        }
+    }
+}

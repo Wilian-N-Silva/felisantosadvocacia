@@ -1,0 +1,41 @@
+.button {
+    font: $button;
+    padding: 1rem 2rem;
+    border: 1px solid $color-black;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    box-sizing: border-box;
+
+    &:hover {
+        transition: .3s;
+    }
+
+    &--primary {
+        color: $color-generic-viridian-5;
+        background-color: $color-generic-viridian-70;
+        border-color: $color-generic-viridian-80;
+
+        &:hover {
+            background-color: $color-generic-viridian-80;
+            border-color: $color-generic-viridian-70;
+        }
+    }
+
+    &--secondary {
+        color: $color-vegas-gold-5;
+        background-color: $color-vegas-gold-60;
+        border-color: $color-vegas-gold-70;
+
+        &:hover {
+            background-color: $color-vegas-gold-70;
+            border-color: $color-vegas-gold-80;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}

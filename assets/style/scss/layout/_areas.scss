@@ -1,0 +1,131 @@
+.areas {
+    width: 100%;
+
+    &-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $spacing-layout-scale-2;
+        position: relative;
+
+        &-item {
+            position: relative;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 1rem;
+
+            display: grid;
+            align-items: end;
+            justify-items: end;
+
+            &-content {
+                position: absolute;
+                font: $card-title;
+                padding: 1rem;
+                color: $color-generic-viridian-5;
+                z-index: 1;
+            }
+
+            .overlay {
+                border-radius: .9rem;
+                position: absolute;
+                top: 0;
+                z-index: 0;
+            }
+
+            &--trabalhista {
+                background: url('/assets/img/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg') no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            &--previdenciaria {
+                background: url('/assets/img/wesley-tingey-9z9fxr_7Z-k-unsplash.jpg') no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-position-y: 15%;
+
+            }
+
+            &--medica {
+                background: url('/assets/img/marcelo-leal-k7ll1hpdhFA-unsplash.jpg') no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            &--civil {
+                background: url('/assets/img/scott-graham-OQMZwNd3ThU-unsplash.jpg') no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .areas {
+        width: 100%;
+
+        &-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: $spacing-layout-scale-4;
+
+            &-item {
+                height: 300px;
+                border: 1px solid black;
+                border-radius: 1rem;
+
+                display: grid;
+                align-items: end;
+                justify-items: end;
+
+                &-content {
+                    position: absolute;
+                    font: $card-title;
+                    padding: 2.5rem;
+                    color: $color-generic-viridian-5;
+                    z-index: 1;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .areas {
+        width: 100%;
+
+        &-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: $spacing-layout-scale-4;
+
+            &-item {
+                border: 1px solid black;
+                border-radius: 1rem;
+
+                display: grid;
+                align-items: end;
+                justify-items: end;
+
+                &-content {
+                    position: absolute;
+                    font: $card-title;
+                    padding: 2.5rem;
+                    color: $color-generic-viridian-5;
+                    z-index: 1;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+/*
+font-family: Inter;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+themes/generic-viridian/primary/primary-70
+
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+themes/generic-viridian/primary/primary-70
+
+//styleName: body_medium;
+font-family: Inter;
+font-size: 24px;
+font-weight: 500;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+
+//styleName: button;
+font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+//styleName: section_sub;
+font-family: Inter;
+font-size: 36px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: left;
+themes/generic-viridian/primary/primary-70
+
+
+
+//styleName: section_desc;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+
+themes/generic-viridian/primary/primary-70
+
+//styleName: body_bold;
+font-family: Inter;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+
+
+//styleName: body;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+
+*/
+
+$heading-1: 700 #{$font-scale-up-4}/#{$line-height-up-2} $font-family;
+$heading-1-sm: 700 #{$font-scale-up-2}/#{$line-height-up-1} $font-family;
+
+$heading-2: 400 #{$font-scale-up-1}/#{$line-height-up-1} $font-family;
+$heading-2: 300 #{$font-scale}/#{$line-height} $font-family;
+
+$button: 700 #{$font-scale}/#{$line-height-up-1} $font-family;
+
+$card-title: 700 #{$font-scale-up-1}/#{$line-height-up-2} $font-family;
+$card-title-sm: 700 #{$font-scale}/#{$line-height} $font-family;
+$card-description: 400 #{$font-scale}/#{$line-height-up-2} $font-family;
+
+$info-subtitle: 700 #{$font-scale-up-3}/#{$line-height-up-3} $font-family;
+$info-subtitle-sm: 700 #{$font-scale}/#{$line-height} $font-family;
+
+$info-description: 400 #{$font-scale-up-1}/#{$line-height-up-2} $font-family;
+$info-description-sm: 400 #{$font-scale}/#{$line-height} $font-family;
